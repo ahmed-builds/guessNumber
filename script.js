@@ -102,23 +102,26 @@ function guessNumber() {
         hint2.classList.add("hint2", "color3");
         attemptCount.classList.remove("color2");
         attemptCount.classList.add("color3");
-
-        if (generateNumber < 20) {
-          hint2.textContent = "Hint #2: The number is in the range of 10-20";
-        } else if (generateNumber < 30 && generateNumber > 20) {
-          hint2.textContent = "Hint #2: The number is in the range of 20-30";
-        } else if (generateNumber < 40 && generateNumber > 30) {
-          hint2.textContent = "Hint #2: The number is in the range of 30-40";
-        } else if (generateNumber < 50 && generateNumber > 40) {
-          hint2.textContent = "Hint #2: The number is in the range of 40-50";
-        } else if (generateNumber < 60 && generateNumber > 50) {
-          hint2.textContent = "Hint #2: The number is in the range of 50-60";
-        } else if (generateNumber < 70 && generateNumber > 60) {
-          hint2.textContent = "Hint #2: The number is in the range of 60-70";
-        } else if (generateNumber < 80 && generateNumber > 70) {
-          hint2.textContent = "Hint #2: The number is in the range of 70-80";
-        } else if (generateNumber < 90 && generateNumber > 80) {
-          hint2.textContent = "Hint #2: The number is in the range of 80-90";
+        if(generateNumber <= 10){
+          hint2.textContent = "Hint #2: The number is in the range of 1-10";
+        } else if (generateNumber > 10 && generateNumber <= 20) {
+          hint2.textContent = "Hint #2: The number is in the range of 11-20";
+        } else if (generateNumber > 20 && generateNumber <= 30) {
+          hint2.textContent = "Hint #2: The number is in the range of 21-30";
+        } else if (generateNumber > 30 && generateNumber <= 40) {
+          hint2.textContent = "Hint #2: The number is in the range of 31-40";
+        } else if (generateNumber > 40 && generateNumber <= 50) {
+          hint2.textContent = "Hint #2: The number is in the range of 41-50";
+        } else if (generateNumber > 50 && generateNumber <= 60) {
+          hint2.textContent = "Hint #2: The number is in the range of 51-60";
+        } else if (generateNumber > 60 && generateNumber <= 70) {
+          hint2.textContent = "Hint #2: The number is in the range of 61-70";
+        } else if (generateNumber > 70 && generateNumber <= 80) {
+          hint2.textContent = "Hint #2: The number is in the range of 71-80";
+        } else if (generateNumber > 80 && generateNumber <= 90) {
+          hint2.textContent = "Hint #2: The number is in the range of 81-90";
+        } else if (generateNumber > 90 && generateNumber <= 100) {
+          hint2.textContent = "Hint #2: The number is in the range of 91-100";
         }
 
         hints.appendChild(hint2);
