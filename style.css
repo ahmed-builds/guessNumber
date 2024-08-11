@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: #ececec;
+}
+
+@media (min-width: 100px) {
+    .main {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .hero_animation {
+        width: 50%;
+    }
+    .guessForm {
+        width: 100%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero_animation {
+        width: 50%;
+    }
+    .guessForm {
+        width: 50%;
+    }
+}
+.main {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1.5rem;
+}
+.hero_animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appTitle {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+}
+input {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+    margin: 1.2rem 0rem;
+}
+.form-group {
+    display: flex;
+    margin: 0.5rem;
+}
+button {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.1rem;
+    background-color: #0dcaf0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+button:hover {    
+    background-color: #0babcc;
+}
+.text-center {
+    text-align: center;
+}
+#results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+    gap: 1rem;
+}
+#attempts {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#attemptCount {
+    font-weight: 700;
+    font-size: 2rem;
+}
+#hints {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+.color1 {
+    color: #0dcaf0;
+}
+.color2 {
+    color: #ffc107;
+}
+.color3 {
+    color: #0d6efd;
+}
+.color4 {
+    color: #dc3545;
+}
+.hint0, .hint1, .hint2, .hint3 {
+    display: flex;
+    align-items: baseline;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+#evenOdd, #rangeHint, #numberReveal {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0rem .5rem;
+}
+.successMessage {
+    color: #198754;
+}
+.success {
+    background-color: #198754;
+}
+.failure {
+    background-color: #dc3545;
+}
+.success:hover{
+    background-color: #156c43;
+}
+.failure:hover {
+    background-color: #b02634;
+}
+#resultCount {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
